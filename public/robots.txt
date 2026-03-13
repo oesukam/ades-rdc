@@ -7,7 +7,7 @@ Allow: /
 # Disallow: /private/
 
 # Sitemap location
-Sitemap: https://ades-rdc.org/sitemap.xml
+Sitemap: https://www.ades-rdc.org/sitemap.xml
 
 # Crawl-delay (optional, adjust if needed)
 # Crawl-delay: 1

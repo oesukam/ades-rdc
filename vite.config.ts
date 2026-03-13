@@ -42,7 +42,7 @@ export default defineConfig({
 
     // Sitemap generation
     sitemap({
-      hostname: 'https://ades-rdc.org',
+      hostname: 'https://www.ades-rdc.org',
       dynamicRoutes: [
         '/',
         '/about',

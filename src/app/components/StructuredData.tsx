@@ -24,7 +24,7 @@ interface OrganizationSchemaProps {
 export function OrganizationSchema({
   name = 'ADES - Action for Development and Social Empowerment',
   description = 'ADES is dedicated to improving lives through community-driven development programs. We focus on economic empowerment, healthcare access, and sustainable agriculture.',
-  url = 'https://ades-rdc.org',
+  url = 'https://www.ades-rdc.org',
   logo: logoUrl,
   address = {
     streetAddress: '123 Development Street',
@@ -43,7 +43,7 @@ export function OrganizationSchema({
     'https://linkedin.com/company/ades',
   ],
 }: OrganizationSchemaProps) {
-  const baseUrl = 'https://ades-rdc.org';
+  const baseUrl = 'https://www.ades-rdc.org';
   const finalLogoUrl = logoUrl || `${baseUrl}${logo}`;
 
   const organizationSchema = {
@@ -115,9 +115,9 @@ interface WebsiteSchemaProps {
 
 export function WebsiteSchema({
   name = 'ADES',
-  url = 'https://ades-rdc.org',
+  url = 'https://www.ades-rdc.org',
   potentialAction = {
-    target: 'https://ades-rdc.org/search?q={search_term_string}',
+    target: 'https://www.ades-rdc.org/search?q={search_term_string}',
     queryInput: 'required name=search_term_string',
   },
 }: WebsiteSchemaProps) {

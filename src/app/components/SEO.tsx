@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../contexts/LanguageContext';
 import logo from '@images/logos/ades-logo.png';
+import { SITE_URL, SITE_NAME_FULL, SITE_DESCRIPTION } from '../../config/constants';
 
 interface SEOProps {
   title?: string;
@@ -31,21 +32,16 @@ export function SEO({
 }: SEOProps) {
   const { language } = useLanguage();
 
-  const baseUrl = 'https://ades-rdc.org';
-  const defaultTitle = language === 'fr'
-    ? 'ADES - Action pour le Développement et l\'Épanouissement Social'
-    : 'ADES - Action for Development and Social Empowerment';
-  const defaultDescription = language === 'fr'
-    ? 'ADES se consacre à améliorer les vies à travers des programmes de développement communautaire. Nous nous concentrons sur l\'autonomisation économique, l\'accès aux soins de santé et l\'agriculture durable.'
-    : 'ADES is dedicated to improving lives through community-driven development programs. We focus on economic empowerment, healthcare access, and sustainable agriculture.';
+  const defaultTitle = SITE_NAME_FULL[language];
+  const defaultDescription = SITE_DESCRIPTION[language];
 
   const siteTitle = title ? `${title} | ADES` : defaultTitle;
   const siteDescription = description || defaultDescription;
-  const siteUrl = url ? `${baseUrl}${url}` : baseUrl;
+  const siteUrl = url ? `${SITE_URL}${url}` : SITE_URL;
   const defaultImage = image || logo;
   const imageUrl = typeof defaultImage === 'string' && defaultImage.startsWith('http')
     ? defaultImage
-    : `${baseUrl}${defaultImage}`;
+    : `${SITE_URL}${defaultImage}`;
 
   // Generate JSON-LD structured data for articles
   const articleStructuredData = type === 'article' && publishedTime ? {
@@ -57,15 +53,15 @@ export function SEO({
     author: {
       '@type': 'Organization',
       name: author || 'ADES',
-      url: baseUrl,
+      url: SITE_URL,
     },
     publisher: {
       '@type': 'Organization',
       name: 'ADES',
-      url: baseUrl,
+      url: SITE_URL,
       logo: {
         '@type': 'ImageObject',
-        url: `${baseUrl}${logo}`,
+        url: `${SITE_URL}${logo}`,
       },
     },
     datePublished: publishedTime,
