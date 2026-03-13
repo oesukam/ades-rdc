@@ -6,6 +6,8 @@ export const SITE_URL = 'https://www.ades-rdc.org';
 
 export const SITE_NAME = 'ADES';
 
+export const SITE_OG_IMAGE = '/og-image.png';
+
 export const SITE_NAME_FULL = {
   en: 'ADES - Action for Development and Social Empowerment',
   fr: 'ADES - Action pour le Développement et l\'Épanouissement Social',

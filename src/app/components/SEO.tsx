@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../contexts/LanguageContext';
 import logo from '@images/logos/ades-logo.png';
-import { SITE_URL, SITE_NAME_FULL, SITE_DESCRIPTION } from '../../config/constants';
+import { SITE_URL, SITE_NAME_FULL, SITE_DESCRIPTION, SITE_OG_IMAGE } from '../../config/constants';
 
 interface SEOProps {
   title?: string;
@@ -38,8 +38,8 @@ export function SEO({
   const siteTitle = title ? `${title} | ADES` : defaultTitle;
   const siteDescription = description || defaultDescription;
   const siteUrl = url ? `${SITE_URL}${url}` : SITE_URL;
-  // Use OG image for social sharing, fallback to logo
-  const defaultImage = image || '/og-image.png';
+  // Use OG image as default for all pages (optimized social sharing preview)
+  const defaultImage = image || SITE_OG_IMAGE;
   const imageUrl = typeof defaultImage === 'string' && defaultImage.startsWith('http')
     ? defaultImage
     : `${SITE_URL}${defaultImage}`;
