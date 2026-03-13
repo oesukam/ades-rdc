@@ -14,20 +14,20 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="col-span-1 md:col-span-2 text-center md:text-left">
             <img
               src={logo400}
               srcSet={`${logo200} 200w, ${logo400} 400w, ${logo} 800w`}
               sizes="(max-width: 768px) 150px, 200px"
               alt="ADES Logo"
-              className="h-12 w-auto mb-4 brightness-0 invert"
+              className="h-12 w-auto mb-4 brightness-0 invert mx-auto md:mx-0"
               width="177"
               height="84"
             />
             <p className="text-sm mb-4">
               {t('footer.about.text')}
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 justify-center md:justify-start">
               <a href="#" className="hover:text-white transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
@@ -44,7 +44,7 @@ export function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-white font-semibold mb-4">{t('footer.quick')}</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -76,18 +76,18 @@ export function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-white font-semibold mb-4">{t('footer.contact')}</h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-start space-x-2">
+              <li className="flex items-start space-x-2 justify-center md:justify-start">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
                 <span>{t('contact.address.city')}, {t('contact.address.province')}, {t('contact.address.country')}</span>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center space-x-2 justify-center md:justify-start">
                 <Phone className="w-4 h-4 flex-shrink-0" />
                 <span>{CONTACT_INFO.phone[0]}</span>
               </li>
-              <li className="flex items-center space-x-2">
+              <li className="flex items-center space-x-2 justify-center md:justify-start">
                 <Mail className="w-4 h-4 flex-shrink-0" />
                 <span>{CONTACT_INFO.email}</span>
               </li>
