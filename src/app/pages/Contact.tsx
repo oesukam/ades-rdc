@@ -76,9 +76,9 @@ export function Contact() {
                       {t('contact.address')}
                     </h3>
                     <p className="text-gray-600">
-                      Kisangani<br />
-                      Tshopo Province<br />
-                      Democratic Republic of Congo
+                      {t('contact.address.city')}<br />
+                      {t('contact.address.province')}<br />
+                      {t('contact.address.country')}
                     </p>
                   </div>
                 </div>
@@ -122,12 +122,12 @@ export function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1 text-gray-900">
-                      Office Hours
+                      {t('contact.hours')}
                     </h3>
                     <p className="text-gray-600">
-                      Monday - Friday: 8:00 AM - 5:00 PM<br />
-                      Saturday: 9:00 AM - 1:00 PM<br />
-                      Sunday: Closed
+                      {t('contact.hours.weekday')}<br />
+                      {t('contact.hours.saturday')}<br />
+                      {t('contact.hours.sunday')}
                     </p>
                   </div>
                 </div>

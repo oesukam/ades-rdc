@@ -38,7 +38,8 @@ export function SEO({
   const siteTitle = title ? `${title} | ADES` : defaultTitle;
   const siteDescription = description || defaultDescription;
   const siteUrl = url ? `${SITE_URL}${url}` : SITE_URL;
-  const defaultImage = image || logo;
+  // Use OG image for social sharing, fallback to logo
+  const defaultImage = image || '/og-image.png';
   const imageUrl = typeof defaultImage === 'string' && defaultImage.startsWith('http')
     ? defaultImage
     : `${SITE_URL}${defaultImage}`;

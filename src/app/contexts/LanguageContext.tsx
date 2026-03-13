@@ -100,6 +100,13 @@ const translations = {
     'contact.address': 'Address',
     'contact.phone': 'Phone',
     'contact.email': 'Email',
+    'contact.address.city': 'Kisangani',
+    'contact.address.province': 'Tshopo Province',
+    'contact.address.country': 'Democratic Republic of Congo',
+    'contact.hours': 'Office Hours',
+    'contact.hours.weekday': 'Monday - Friday: 8:00 AM - 5:00 PM',
+    'contact.hours.saturday': 'Saturday: 9:00 AM - 1:00 PM',
+    'contact.hours.sunday': 'Sunday: Closed',
     
     // Footer
     'footer.about': 'About ADES',
@@ -306,6 +313,13 @@ const translations = {
     'contact.address': 'Adresse',
     'contact.phone': 'Téléphone',
     'contact.email': 'Email',
+    'contact.address.city': 'Kisangani',
+    'contact.address.province': 'Province de la Tshopo',
+    'contact.address.country': 'République Démocratique du Congo',
+    'contact.hours': 'Heures d\'Ouverture',
+    'contact.hours.weekday': 'Lundi - Vendredi : 8h00 - 17h00',
+    'contact.hours.saturday': 'Samedi : 9h00 - 13h00',
+    'contact.hours.sunday': 'Dimanche : Fermé',
     
     // Footer
     'footer.about': 'À Propos d\'ADES',

@@ -7,6 +7,7 @@ import mdx from '@mdx-js/rollup'
 import remarkFrontmatter from 'remark-frontmatter'
 import remarkGfm from 'remark-gfm'
 import sitemap from 'vite-plugin-sitemap'
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import { SITE_URL } from './src/config/constants'
 
 export default defineConfig({
@@ -70,6 +71,35 @@ export default defineConfig({
         defaultLanguage: 'fr',
         languages: ['en', 'fr'],
       },
+    }),
+
+    // Image optimization - automatically compress and convert images
+    ViteImageOptimizer({
+      // PNG optimization
+      png: {
+        quality: 80,
+      },
+      // JPEG optimization
+      jpeg: {
+        quality: 80,
+      },
+      // JPG optimization (same as JPEG)
+      jpg: {
+        quality: 80,
+      },
+      // WebP conversion (better compression than PNG/JPEG)
+      webp: {
+        quality: 85,
+        lossless: false,
+      },
+      // AVIF conversion (best compression, modern browsers)
+      avif: {
+        quality: 75,
+        lossless: false,
+      },
+      // Cache optimization results
+      cache: true,
+      cacheLocation: 'node_modules/.cache/vite-plugin-image-optimizer',
     }),
   ],
 
