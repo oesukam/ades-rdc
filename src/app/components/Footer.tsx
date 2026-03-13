@@ -2,6 +2,8 @@ import { Link } from 'react-router';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import logo from '@images/logos/ades-logo.png';
+import logo200 from '@images/logos/ades-logo-200.png';
+import logo400 from '@images/logos/ades-logo-400.png';
 import { CONTACT_INFO } from '../../config/constants';
 
 export function Footer() {
@@ -13,7 +15,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="col-span-1 md:col-span-2">
-            <img src={logo} alt="ADES Logo" className="h-12 w-auto mb-4 brightness-0 invert" />
+            <img
+              src={logo400}
+              srcSet={`${logo200} 200w, ${logo400} 400w, ${logo} 800w`}
+              sizes="(max-width: 768px) 150px, 200px"
+              alt="ADES Logo"
+              className="h-12 w-auto mb-4 brightness-0 invert"
+              width="177"
+              height="84"
+            />
             <p className="text-sm mb-4">
               {t('footer.about.text')}
             </p>

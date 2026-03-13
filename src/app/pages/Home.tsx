@@ -2,6 +2,7 @@ import { Link } from 'react-router';
 import { ArrowRight, Users, Syringe, Banknote, Sprout, Briefcase, Leaf, Scale, TrendingUp } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { SEO } from '../components/SEO';
+import { optimizeUnsplashUrl } from '../../utils/imageUtils';
 
 export function Home() {
   const { t, language } = useLanguage();
@@ -23,9 +24,10 @@ export function Home() {
       <section className="relative h-[600px] flex items-center justify-center">
         <div className="absolute inset-0 bg-gradient-to-r from-[#0033A0]/90 to-[#8B1A1A]/80 z-10" />
         <img
-          src="https://images.unsplash.com/photo-1761039808159-f02b58f07032?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBkZXZlbG9wbWVudCUyMGFmcmljYXxlbnwxfHx8fDE3NzMzOTI5MDV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+          src={optimizeUnsplashUrl("https://images.unsplash.com/photo-1761039808159-f02b58f07032", 1920, 80)}
           alt="Community Development"
           className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
         />
         <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl mb-6">
@@ -91,9 +93,10 @@ export function Home() {
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1761370981160-0e111d79ebc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwd29tZW4lMjBlbnRyZXByZW5ldXJzJTIwYnVzaW5lc3N8ZW58MXx8fHwxNzczMzA3ODM4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src={optimizeUnsplashUrl("https://images.unsplash.com/photo-1761370981160-0e111d79ebc3", 800, 80)}
                   alt="Women's Entrepreneurship"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0033A0]/80 to-transparent" />
                 <div className="absolute bottom-4 left-4">
@@ -117,9 +120,10 @@ export function Home() {
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1760624683181-7570791efd52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMGVudmlyb25tZW50JTIwdHJlZSUyMHBsYW50aW5nfGVufDF8fHx8MTc3MzM5NjI4MHww&ixlib=rb-4.1.0&q=80&w=1080"
+                  src={optimizeUnsplashUrl("https://images.unsplash.com/photo-1760624683181-7570791efd52", 800, 80)}
                   alt="Environment and Sustainable Development"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0033A0]/80 to-transparent" />
                 <div className="absolute bottom-4 left-4">
@@ -143,9 +147,10 @@ export function Home() {
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1722643882339-7a6c9cb080db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2NhbCUyMGdvdmVybmFuY2UlMjBjb21tdW5pdHklMjBtZWV0aW5nfGVufDF8fHx8MTc3MzM5NjI4MHww&ixlib=rb-4.1.0&q=80&w=1080"
+                  src={optimizeUnsplashUrl("https://images.unsplash.com/photo-1722643882339-7a6c9cb080db", 800, 80)}
                   alt="Decentralization and Local Governance"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0033A0]/80 to-transparent" />
                 <div className="absolute bottom-4 left-4">
@@ -169,9 +174,10 @@ export function Home() {
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1767281076144-56846e388134?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxydXJhbCUyMGVjb25vbXklMjBhZ3JpY3VsdHVyYWwlMjBtYXJrZXR8ZW58MXx8fHwxNzczMzk2MjgwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src={optimizeUnsplashUrl("https://images.unsplash.com/photo-1767281076144-56846e388134", 800, 80)}
                   alt="Rural Economy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0033A0]/80 to-transparent" />
                 <div className="absolute bottom-4 left-4">

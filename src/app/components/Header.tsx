@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router';
 import { Menu, X, Globe } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import logo from '@images/logos/ades-logo.png';
+import logo200 from '@images/logos/ades-logo-200.png';
+import logo400 from '@images/logos/ades-logo-400.png';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +29,15 @@ export function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="ADES Logo" className="h-12 w-auto" />
+            <img
+              src={logo400}
+              srcSet={`${logo200} 200w, ${logo400} 400w, ${logo} 800w`}
+              sizes="(max-width: 768px) 150px, 200px"
+              alt="ADES Logo"
+              className="h-12 w-auto"
+              width="177"
+              height="84"
+            />
           </Link>
 
           {/* Desktop Navigation */}
