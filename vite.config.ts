@@ -7,6 +7,7 @@ import mdx from '@mdx-js/rollup'
 import remarkFrontmatter from 'remark-frontmatter'
 import remarkGfm from 'remark-gfm'
 import sitemap from 'vite-plugin-sitemap'
+import { SITE_URL } from './src/config/constants'
 
 export default defineConfig({
   plugins: [
@@ -42,7 +43,7 @@ export default defineConfig({
 
     // Sitemap generation
     sitemap({
-      hostname: 'https://www.ades-rdc.org',
+      hostname: SITE_URL,
       dynamicRoutes: [
         '/',
         '/about',

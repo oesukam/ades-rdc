@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import logo from '@images/logos/ades-logo.png';
+import { SITE_URL, SITE_NAME, SITE_NAME_FULL, SITE_DESCRIPTION, CONTACT_INFO, SOCIAL_LINKS } from '../../config/constants';
 
 interface OrganizationSchemaProps {
   name?: string;
@@ -22,29 +23,19 @@ interface OrganizationSchemaProps {
 }
 
 export function OrganizationSchema({
-  name = 'ADES - Action for Development and Social Empowerment',
-  description = 'ADES is dedicated to improving lives through community-driven development programs. We focus on economic empowerment, healthcare access, and sustainable agriculture.',
-  url = 'https://www.ades-rdc.org',
+  name = SITE_NAME_FULL.en,
+  description = SITE_DESCRIPTION.en,
+  url = SITE_URL,
   logo: logoUrl,
-  address = {
-    streetAddress: '123 Development Street',
-    addressLocality: 'Kinshasa',
-    addressCountry: 'CD',
-  },
+  address = CONTACT_INFO.address,
   contactPoint = {
-    telephone: '+243-123-456-789',
-    email: 'info@ades-rdc.org',
+    telephone: CONTACT_INFO.phone[0],
+    email: CONTACT_INFO.email,
     contactType: 'Customer Service',
   },
-  sameAs = [
-    'https://facebook.com/ades',
-    'https://twitter.com/ades',
-    'https://instagram.com/ades',
-    'https://linkedin.com/company/ades',
-  ],
+  sameAs = Object.values(SOCIAL_LINKS),
 }: OrganizationSchemaProps) {
-  const baseUrl = 'https://www.ades-rdc.org';
-  const finalLogoUrl = logoUrl || `${baseUrl}${logo}`;
+  const finalLogoUrl = logoUrl || `${SITE_URL}${logo}`;
 
   const organizationSchema = {
     '@context': 'https://schema.org',
@@ -114,10 +105,10 @@ interface WebsiteSchemaProps {
 }
 
 export function WebsiteSchema({
-  name = 'ADES',
-  url = 'https://www.ades-rdc.org',
+  name = SITE_NAME,
+  url = SITE_URL,
   potentialAction = {
-    target: 'https://www.ades-rdc.org/search?q={search_term_string}',
+    target: `${SITE_URL}/search?q={search_term_string}`,
     queryInput: 'required name=search_term_string',
   },
 }: WebsiteSchemaProps) {

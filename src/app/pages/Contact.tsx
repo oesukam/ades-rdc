@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { SEO } from '../components/SEO';
+import { CONTACT_INFO } from '../../config/constants';
 
 export function Contact() {
   const { t } = useLanguage();
@@ -17,7 +18,7 @@ export function Contact() {
 
     // Create mailto link with form data
     const { name, email, subject, message } = formData;
-    const mailtoLink = `mailto:info@ades-rdc.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:${CONTACT_INFO.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
     )}`;
 
@@ -91,8 +92,12 @@ export function Contact() {
                       {t('contact.phone')}
                     </h3>
                     <p className="text-gray-600">
-                      +123 456 789 000<br />
-                      +123 456 789 001
+                      {CONTACT_INFO.phone.map((phone, index) => (
+                        <span key={index}>
+                          {phone}
+                          {index < CONTACT_INFO.phone.length - 1 && <br />}
+                        </span>
+                      ))}
                     </p>
                   </div>
                 </div>
@@ -106,7 +111,7 @@ export function Contact() {
                       {t('contact.email')}
                     </h3>
                     <p className="text-gray-600">
-                      info@ades-rdc.org
+                      {CONTACT_INFO.email}
                     </p>
                   </div>
                 </div>

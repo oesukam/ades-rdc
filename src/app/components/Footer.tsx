@@ -2,6 +2,7 @@ import { Link } from 'react-router';
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import logo from '@images/logos/ades-logo.png';
+import { CONTACT_INFO } from '../../config/constants';
 
 export function Footer() {
   const { t } = useLanguage();
@@ -74,11 +75,11 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <span>+123 456 789</span>
+                <span>{CONTACT_INFO.phone[0]}</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span>info@ades-rdc.org</span>
+                <span>{CONTACT_INFO.email}</span>
               </li>
             </ul>
           </div>

@@ -106,9 +106,9 @@ export function SEO({
       <link rel="canonical" href={siteUrl} />
 
       {/* Alternate Language Links */}
-      <link rel="alternate" hrefLang="en" href={`${baseUrl}${url || ''}`} />
-      <link rel="alternate" hrefLang="fr" href={`${baseUrl}${url || ''}`} />
-      <link rel="alternate" hrefLang="x-default" href={`${baseUrl}${url || ''}`} />
+      <link rel="alternate" hrefLang="en" href={`${SITE_URL}${url || ''}`} />
+      <link rel="alternate" hrefLang="fr" href={`${SITE_URL}${url || ''}`} />
+      <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}${url || ''}`} />
 
       {/* Article-specific meta tags */}
       {type === 'article' && author && <meta property="article:author" content={author} />}
