@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://ades-rdc.org/</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/" />
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://ades-rdc.org/about</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/about" />
+  </url>
+
+  <!-- Projects Page -->
+  <url>
+    <loc>https://ades-rdc.org/projects</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/projects" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/projects" />
+  </url>
+
+  <!-- Gallery Page -->
+  <url>
+    <loc>https://ades-rdc.org/gallery</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/gallery" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/gallery" />
+  </url>
+
+  <!-- Blog Page -->
+  <url>
+    <loc>https://ades-rdc.org/blog</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/blog" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/blog" />
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://ades-rdc.org/blog/empowering-women-through-savings-groups</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/blog/empowering-women-through-savings-groups" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/blog/empowering-women-through-savings-groups" />
+  </url>
+
+  <url>
+    <loc>https://ades-rdc.org/blog/sustainable-agriculture-climate-change</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/blog/sustainable-agriculture-climate-change" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/blog/sustainable-agriculture-climate-change" />
+  </url>
+
+  <url>
+    <loc>https://ades-rdc.org/blog/vaccination-campaigns-protecting-communities</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/blog/vaccination-campaigns-protecting-communities" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/blog/vaccination-campaigns-protecting-communities" />
+  </url>
+
+  <!-- Team Page -->
+  <url>
+    <loc>https://ades-rdc.org/team</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/team" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/team" />
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://ades-rdc.org/contact</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/contact" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/contact" />
+  </url>
+
+  <!-- Intervention Detail Pages -->
+  <url>
+    <loc>https://ades-rdc.org/interventions/entrepreneurship</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/interventions/entrepreneurship" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/interventions/entrepreneurship" />
+  </url>
+
+  <url>
+    <loc>https://ades-rdc.org/interventions/environment</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/interventions/environment" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/interventions/environment" />
+  </url>
+
+  <url>
+    <loc>https://ades-rdc.org/interventions/governance</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/interventions/governance" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/interventions/governance" />
+  </url>
+
+  <url>
+    <loc>https://ades-rdc.org/interventions/rural</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/interventions/rural" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/interventions/rural" />
+  </url>
+
+  <!-- Individual Project Pages -->
+  <url>
+    <loc>https://ades-rdc.org/projects/saving-groups</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/projects/saving-groups" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/projects/saving-groups" />
+  </url>
+
+  <url>
+    <loc>https://ades-rdc.org/projects/agro-business</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/projects/agro-business" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/projects/agro-business" />
+  </url>
+
+  <url>
+    <loc>https://ades-rdc.org/projects/vaccination</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/projects/vaccination" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/projects/vaccination" />
+  </url>
+
+  <url>
+    <loc>https://ades-rdc.org/projects/health</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ades-rdc.org/projects/health" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ades-rdc.org/projects/health" />
+  </url>
+
+</urlset>
